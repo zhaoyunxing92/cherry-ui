@@ -36,7 +36,7 @@ registerLocaleData(zh);
     {provide: LY_THEME, useClass: MinimaDark, multi: true}, // name: `minima-dark`
     {provide: HAMMER_GESTURE_CONFIG, useClass: LyHammerGestureConfig}
   ],
-  exports: [AppRoutingModule]
+  exports: [ServicesModule, PagesModule, ShareModule, AppRoutingModule]
 })
 export class CoreModule {
   constructor(@SkipSelf() @Optional() coreModule: CoreModule) {
