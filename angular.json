@@ -46,6 +46,8 @@
             "aot": true,
             "assets": [
               "src/assets/ico/favicon.ico",
+              "src/assets/font/cyrillic.woff2",
+              "src/assets/font/latin.woff2",
               "src/assets"
             ],
             "styles": [
@@ -109,7 +111,9 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
+              "src/assets/ico/favicon.ico",
+              "src/assets/font/cyrillic.woff2",
+              "src/assets/font/latin.woff2",
               "src/assets"
             ],
             "styles": [
