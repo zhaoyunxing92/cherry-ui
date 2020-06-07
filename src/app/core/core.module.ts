@@ -5,7 +5,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {ServicesModule} from '../services/services.module';
 import {PagesModule} from '../pages/pages.module';
 import {ShareModule} from '../share/share.module';
-import {AppRoutingModule} from '../app-routing.module';
+import {AppRoutingModule} from '../router/app-routing.module';
 import {registerLocaleData} from '@angular/common';
 import zh from '@angular/common/locales/zh';
 
