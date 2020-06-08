@@ -12,9 +12,7 @@ export class LoginComponent {
   constructor() {
   }
 
-  /**
-   * 登陆表单验证
-   */
+  /** 登陆表单验证 */
   loginForm = new FormGroup({
     username: new FormControl('', [
       Validators.required,
@@ -24,14 +22,10 @@ export class LoginComponent {
     ]),
   });
 
-  /**
-   * 是否显示密码
-   */
-  hidePassword = false;
+  /** 是否显示密码 */
+  hidePassword = true;
 
-  /**
-   * 登陆
-   */
+  /** 登陆 */
   onLogin() {
     console.log(this.loginForm.valid);
     console.warn(this.loginForm.value);
