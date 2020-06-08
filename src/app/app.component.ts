@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {ThemeVariables, lyl, StyleRenderer, WithStyles} from '@alyle/ui';
+import {Component, OnInit} from '@angular/core';
+import {lyl, StyleRenderer, ThemeVariables, WithStyles} from '@alyle/ui';
 
 const styles = (theme: ThemeVariables) => ({
   $global: lyl`{
@@ -25,9 +25,12 @@ const styles = (theme: ThemeVariables) => ({
     <router-outlet></router-outlet>`,
   providers: [StyleRenderer],
 })
-export class AppComponent implements WithStyles {
+export class AppComponent implements OnInit, WithStyles {
   readonly classes = this.sRenderer.renderSheet(styles, true);
 
   constructor(readonly sRenderer: StyleRenderer) {
+  }
+
+  ngOnInit(): void {
   }
 }
