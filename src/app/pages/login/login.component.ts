@@ -1,5 +1,5 @@
 import {Component, ChangeDetectionStrategy} from '@angular/core';
-import {FormGroup, FormControl, Validators} from '@angular/forms';
+import {FormGroup, FormControl, Validators, AbstractControl} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -23,11 +23,10 @@ export class LoginComponent {
   });
 
   /** 是否显示密码 */
-  hidePassword = true;
+  public hidePassword = true;
 
   /** 登陆 */
   onLogin() {
-    console.log(this.loginForm.valid);
-    console.warn(this.loginForm.value);
+    console.log(this.loginForm.value);
   }
 }
